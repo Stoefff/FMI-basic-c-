@@ -6,5 +6,5 @@ Zadachi i test na teoritq
 
 
 for (i== 0; i <= n; i++){
-    
+    return 0;
 }
