@@ -1,2 +1,2 @@
-# FMI Introduction to programming, basic c++
-Introduction to programming xD with c++
+# Introduction to programming xD with c++
+The repo contains code and notes from the Introduction to programming 2017 course @FMI
