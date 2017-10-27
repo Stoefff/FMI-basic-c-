@@ -17,7 +17,7 @@ int main(){
         cout << "yes" << endl;
         return 0;
     }
-
+// Maybe try with keyword "continue"
     for(long i = 0; i <= lenghtOfSaw; i++){
         cout << "Enter the " << i + 1 << " number:" << endl;
         cin >> rightNeighbor;
