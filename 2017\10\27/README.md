@@ -5,7 +5,7 @@
 100 << 1;
 
 ## Trenary operator (Slippery)
-```c++
+```cpp
 cout << "Enter a whole number: ";
 cin >> number;
 // if the lower expression was like: (number % 2) the fucking thing wont work !!!!
