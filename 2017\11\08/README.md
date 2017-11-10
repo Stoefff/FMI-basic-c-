@@ -1,15 +1,15 @@
-### Structures in the code && loops exercise
+# Structures in the code && loops exercise
 
 ## Literals: hard-coded raw value
-# Examples:
+## Examples:
     4; 3;
 
 ## Operators: combines two structures and does somethings with them
-# Examples:
+### Examples:
     + = if else for
 
 ## Statement: consists of the operation and the values with which the operators work. They are like command - the instruct the program to do operation with the values
-# Examples:
+### Examples:
     a = b + c;
     if( a > b ){
         ...
@@ -18,7 +18,7 @@
     }
 
 ## Block: part of the code with is executed always consecutively(Check for more details)
-# Examples:
+### Examples:
 {
     ...
     expressions
