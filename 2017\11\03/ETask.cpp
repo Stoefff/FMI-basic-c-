@@ -16,6 +16,6 @@ int main(){
     std::cin >> setter;
 
     value = bool(number & (mask << getter));
-    number = number & (~(value << getter )
+//    number = number & (~(value << getter ) TODO: complete it
     return 0;
 }

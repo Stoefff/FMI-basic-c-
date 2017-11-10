@@ -12,3 +12,4 @@ number = number | (value << setter);
 
 But this is incorrect, beacuse in certain cases it wont work
 We should write it with to if cases
+Or maybe it would be very fast to write it just with bin ops
