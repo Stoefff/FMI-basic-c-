@@ -31,11 +31,7 @@ int main(){
             }
             for (int i = 1; i <= sequenceLength ; i++){
                 if (i % 2 == 0){
-                    if (sequenceDigit == 1){
-                        number = number & ~mask;
-                    } else {
-                        number = number | mask;
-                    }
+                    number = number ^ mask;
                 }
                 mask >>= 1;
             }
