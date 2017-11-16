@@ -11,3 +11,4 @@ of some c++ syntax or feature unknown to me until that point
 * [Resources](https://learn.fmi.uni-sofia.bg/course/view.php?id=3700)  
 * [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)  
 * [Markdown tutorial](https://www.markdowntutorial.com/)  
+* [Group drive](https://drive.google.com/open?id=0B9rx-8vumi-GVjUwbWU3WUVuQjQ)
