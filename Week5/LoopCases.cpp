@@ -14,7 +14,8 @@ int main(){
     // how to brake to cin buffer
     unsigned int m = 100;
     do {
-        std::cout << "Enter m" << "\n"; // Buffer read keyboard input and ignores(counts as a whitespace) syms bellow 32 ASCII
+        std::cout << "Enter m" << "\n";
+        // Buffer read keyboard input and ignores(counts as a whitespace) syms bellow 32 ASCII
         std::cin >> m; // Here we enter symbols
     } while (m > 50);
 
