@@ -2,14 +2,14 @@
 ## Visual Studio comp vs G++
 In Visual Studio you cant init array with size entered from the user  
 In G++ you can do it but it is not good(could fuck up in various diff ways)  
-**__ DON'T DO IT __**
+_** DON'T DO IT **_
 
 ## 2D arrays
 Watch out when passing by reference
 
-## Sorting Algorithms:  
+## Simple sorting algorithms:  
 
-* Bubble:  
+### * Bubble:  
 > Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order.  
 
 ```c++
@@ -25,7 +25,7 @@ void bubbleSort(int arr[], int n)
 }
 ```  
 
-* Selection:  
+### * Selection:  
 > The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering > ascending order) from unsorted part and putting it at the beginning. The algorithm maintains two > subarrays in a given array.  
 
 ``` c++
@@ -48,7 +48,7 @@ void selectionSort(int arr[], int n)
 }
 ```  
 
-* Insertion Sort:  
+### * Insertion Sort:  
 > Insertion sort is a simple sorting algorithm that works the way we sort playing cards in our hands
 
 ``` c++
