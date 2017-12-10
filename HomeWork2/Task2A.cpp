@@ -3,7 +3,7 @@
 
 const int MAX_OFFSET = 10;
 
-bool checkSquare(int square[MAX_OFFSET][MAX_OFFSET], short size){
+bool checkSquare(int (&square)[MAX_OFFSET][MAX_OFFSET], short size){
     int magicNumber = 0, otherDiagonalSum = 0;
 
     for (int i = 0, j = size-1; i < size; i++, j--){
@@ -46,10 +46,5 @@ int main(){
     } */
 
     std::cout << ((checkSquare(square, size)) ? "True" : "False") << "\n";
-    // Semergiev said that just passing square without the cast wont work because
-    // the compiler tries to protect us from lossing the array size, but
-    // because we pass size (< MAX_OFFSET with with the array is init), we
-    // can work safe here
-
     return 0;
 }
