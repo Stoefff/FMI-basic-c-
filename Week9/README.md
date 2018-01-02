@@ -14,9 +14,9 @@ N.B. : Write a boolean func that compares wherever 2 colors are close(CheckWiki 
     * All var with "static" in front of them
  * Dynamic
     * Pointer and const
-        const int * bite = 1024; - const address, variable value
-        int const * bite = 1024; - const address, variable value
-        int * const bite = 1024; - variable address, const address
+        const int * bite = 1024; - variable address, cosnt value
+        int const * bite = 1024; - variable address, cosnt value
+        int * const bite = 1024; - cosnt addrees, variable value
     * Reference (logicheski psevdonim)
         * No null pointer cust const
         * like const pointer int & ref <=> int * const ref
