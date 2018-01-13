@@ -42,7 +42,31 @@ int sum(int n ){
 }
 ```
 
-### Tree like - To be continued
+### Tree like recursion
+There are many branches in with the recursion is called.
+Good examples the calculation the Fibochi sequence.
+It is not a good type of recursion because it runs the calculation for the same
+values at least 2 times because of the tree structure. Check the logic of fib
+```c++
+unsigned int fib(unsigned n){
+    if(n < 2)
+        return n;
+    return fib(n-1) + fib(n - 2);
+}
+```
+So in order to escape this calculation we remember the values
+Very fast
+```c++
+unsigned int fib2_rec(unsigned int first, unsigned sec, unsigned int n){
+    if(n == 0)
+        return first;
+    if(n == 1)
+        return second;
+    return fib2_rec(sec, first + sec, n - 1);
+}
+```
+
+**Good practice will be doing binary search first with iterator the with rec**
 
 ### Spectre and  meltdown and some low level shit
 
