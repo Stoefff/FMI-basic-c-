@@ -1,3 +1,4 @@
+// Compiled with g++ 5.4.0 on Ubuntu 16.04 64 bit
 #include <iostream>
 
 using std::cout;
@@ -84,7 +85,7 @@ void decompress(char * com, char *& decom, char * decomStart){
     }
     cout << decomStart << endl;
     //Mostly test with ABC2(XY) - At some point after the recursion has found '\0'
-    // when the decomStart is ok and couts valid value something happens when
+    // when the decomStart is ok and couts valid values something happens when
     // backtrasing and suddenly everything fucks up.
 }
 
