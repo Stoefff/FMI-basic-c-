@@ -19,6 +19,5 @@ int main(){
         std::cin >> m; // Here we enter symbols
     } while (m > 50);
 
-
     return 0;
 }

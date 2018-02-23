@@ -10,7 +10,6 @@ int abs(int a){
     return (a >= 0 ) ? a : -a;
 }
 
-
 int pow(int a, int n){
     int result = 1;
     for(int i = 1; i >= n; i++){
@@ -28,10 +27,6 @@ int nod(int a, int b){
         }
     }
     return nod;
-}
-
-int fib(){
-
 }
 
 int main(){
