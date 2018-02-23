@@ -64,10 +64,6 @@ bool isPolinrom(const char * str){
     return true;
 }
 
-char * dynamicConcat(char * dest, ){
-
-}
-
 int main(){
 
     return 0;

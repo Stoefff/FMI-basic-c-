@@ -1,22 +1,22 @@
 ## Strings
-
 ### Difference between " " and ' '
-    "" - have a \0 at the end and '' does not so its just one symbol
+" " - have a \0 at the end  
+'' does not have a \0 so its just one symbol
 
-### String pooling and differences between char[] and char*
+### String pooling and differences between char[] and char* and string polling
 ```c++
 char buffer[] = "Hello World!";
 char* p = "Hello World!";
 char* p1 = "Hello World!";
 //Because both pointer lead to the same literal so it could also lead to
 // both pointer pointing to the same memory
-// ^^^ This is called string polling ^^^
+// ^^^ This is called string polling  ^^^
 
 //The alternative good practice
 const char* p2 = "Hello World";
 const char* p3 = "Hello World";
 
-buffer[0] = 'h' ; // Good to do
+buffer[0] = 'h' ; // Good
 p[0] = 'h'; // Bad
 ```
 ```c++
@@ -54,7 +54,7 @@ int MyStrlen(const char* str){
     return (p - str)
 }
 int main(){
-    char buffer[] = "dank memes"
+    char buffer[] = "Dank memes"
     std::cout << Mystrlen(buffer) << "\n";
 
     buffer[4] = '\0'; //Cutting the string like a pro
@@ -69,15 +69,14 @@ int main(){
 ```
 
 ### std::cin vs std::getline()
-std::cin - searches to space not \0 !!!!!!!!!!!!!!!!!! also could fuck up memory
-getline() is DANGEROUS !!! -
-!!! getline could have a parameter which say which symbol is searched for ending
-!!! the default is \0 . Use this for the homework
+std::cin - searches to space not \0 ! Also could fuck up memory  
+getline() is **DANGEROUS**   
+getline() could have a parameter which say which symbol is searched for ending  
+The default is \0 . Use this for the homework
 ```c++
 char name[19];
 std::cin >> name;
-std::getline();
-
+std::getline(name, 19);
 ```
 
 ### std::cerr
@@ -89,17 +88,45 @@ char * name="Plamen"; //Literal, const
 char name[]="Plamen"; //Coulde be changed;
 ```
 
-### strlen
+### strlen()
 This uses a copy of the pointer so we wont lose pointer to the start in main
 ```c++
-unsigned int myStrlen(const char * string){
-    unsigned length = 0;
-    while(string[length]){
-        length++;
-    }
-    return length;
+size_t myStrlen(const char * str) {
+	size_t size = 0;
+	while (*str != '\0') {
+		size++;
+		str++;
+	}
+	return size;
 }
 ```
-### strcpy();
-### strcmp();
-### strcat();
+### strcpy()
+```c++
+char * myStrcpy(const char * source, char * destination) {
+	int i = 0;
+	while (source[i]) {
+		destination[i] = source[i];
+		i++;
+	}
+	return destination;
+}
+```
+### strcmp()
+```c++
+int myStrcom(const char * str1, const char * str2) {
+	while (*str1 != '\0' && *str1 == *str2) {
+		str1++;
+		str2++;
+	}
+	return * str1 - * str2;
+}
+```
+### strcat()
+```c++
+char * myStrcat(const char * source, char * destination) {
+	while (*source != '\0') { // not the standard definition but here works perfectly
+		* destination++ = * source++;
+	}
+	return destination;
+}
+```
