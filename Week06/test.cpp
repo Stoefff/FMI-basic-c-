@@ -9,7 +9,7 @@ int main(){
         mask >>= 1;
     }
     std::cout << std::endl;
-    mask = mask++;
+    mask++;
     return 0;
 
 }
