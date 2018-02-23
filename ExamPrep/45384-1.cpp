@@ -1,11 +1,11 @@
 /////////////////////////////////////////////////////////////
 //
-// Author: Юлиан Стоев
+// Author: пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 // FN: 45384
-// Program: Информатика
+// Program: пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 // Grade: 1
 // Task: 1
-// Variant: А
+// Variant: пїЅ
 // Date: 13.02.2018
 //
 
@@ -31,13 +31,13 @@ void getWord(char * strItt, char * buffer, size_t & buffLen) {
 	}
 	buffer[buffLen] = '\0'; // bug
 }
-
+//Big problems here
 bool isContained(char * word, char ** dictionary, int wordsCount) {
 	for (int i = 0; i < wordsCount; i++) {
 		char * dicWord = dictionary[i];
-		if (strcmp(dicWord, word) == 0) {
+/*		if (strcmp(dicWord, word) == 0) {
 			return true;
-		}
+		}  */
 	}
 	return false;
 } // fucking die
@@ -67,7 +67,7 @@ int main(){
 		dictionary[i] = buffer;
 	}
 
-	
+
 	cout << "Dank memes: " << dictionary[2][0] << endl;
 
 	cin.ignore();
@@ -80,13 +80,13 @@ int main(){
 
 	while (*strItt != '\0'){ // not ending
 		size_t wordLen = 0;
-		char word[40]; 
+		char word[40];
 		getWord(strItt, word, wordLen);
 
 		if (wordLen > 1){
 			if (isContained(word, dictionary, wordsCount) == true) {
 				reverseWord(strItt, word, wordLen);
-			} 
+			}
 		}
 		strItt += wordLen;
 		while(*strItt == '\t' || *strItt == ' '){ // != whitespace
@@ -103,4 +103,3 @@ int main(){
 
 	return 0;
 }
-

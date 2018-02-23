@@ -31,7 +31,6 @@ char * myStrcpy(const char * source, char * destination) {
 }
 
 int myStrcom(const char * str1, const char * str2) {
-	int i = 0;
 	while (*str1 != '\0' && *str1 == *str2) {
 		str1++;
 		str2++;
