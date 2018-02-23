@@ -39,29 +39,29 @@ N.B. : Write a boolean function that compares wherever 2 colors are close
     pointers you should pass address pointing to the variables and
     when using reference is that the function takes the the address of the
     of the passed var with out pointer**
-    * How arrays work
-    ```c++
-    arr[5] = * (arr + 5) // this shouldn't be * (arr + 5*(sizeof(int)))
-    ```
-    This shouldn't be * (arr + 5*(sizeof(int))) because the compile does this
-    for us by detecting the type of arr
-    * How to iterate through array with pointer
-    ```c++
-    int main(){
-        int arr[] = {1, 2, 3};
-        int size = 3;
-        int * p = arr;
-        for(int i = 0; i < size; i++) {
-            std::cout << * p;
-            p++;
-        }
+* How arrays work
+```c++
+arr[5] = * (arr + 5) // this shouldn't be * (arr + 5*(sizeof(int)))
+```
+This shouldn't be * (arr + 5*(sizeof(int))) because the compile does this
+for us by detecting the type of arr
+* How to iterate through array with pointer
+```c++
+int main(){
+    int arr[] = {1, 2, 3};
+    int size = 3;
+    int * p = arr;
+    for(int i = 0; i < size; i++) {
+        std::cout << * p;
+        p++;
     }
-    ```
-    * Dynamic arrays
-    ```c++
-        int * p = new (std::nothrow) int[64];
-        if(!p) {std::cout << "Stop the Chrome"}
-        std::cout << *p;
-            p++;
-        delete [] p; // Iteration is done automatically we should just write this
-    ```
+}
+```
+* Dynamic arrays
+```c++
+    int * p = new (std::nothrow) int[64];
+    if(!p) {std::cout << "Stop the Chrome"}
+    std::cout << *p;
+        p++;
+    delete [] p; // Iteration is done automatically we should just write this
+```
