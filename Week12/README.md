@@ -1,9 +1,4 @@
 ## Recursion
-
-### Vasi went must nuts about Fractals
-
-### Recursion in coding xD
-
 ```c++
 void printf(int iter){
     if(iter < 10){
@@ -22,8 +17,8 @@ int main(){
 ```
 
 ### Types of recursion
-
-#### Linear - going form start to bottom
+#### Linear
+Going form start to bottom
 ```c++
 int sum(int number, int result = 0){ // if result is not passed, default is 0 !!
     if(number <= 0)
@@ -33,7 +28,8 @@ int sum(int number, int result = 0){ // if result is not passed, default is 0 !!
 }
 ```
 
-### Tail recursion - going from the bottom to the start
+### Tail recursion
+Returning from the bottom to the start
 ```c++
 int sum(int n ){
     if(n == 0)
@@ -43,10 +39,10 @@ int sum(int n ){
 ```
 
 ### Tree like recursion
-There are many branches in with the recursion is called.
-Good examples the calculation the Fibochi sequence.
+There are many branches in with the recursion is called.  
+Good examples the calculation the Fibonacci sequence.  
 It is not a good type of recursion because it runs the calculation for the same
-values at least 2 times because of the tree structure. Check the logic of fib
+values at least 2 times because of the tree structure.
 ```c++
 unsigned int fib(unsigned n){
     if(n < 2)
@@ -69,36 +65,34 @@ unsigned int fib2_rec(unsigned int first, unsigned sec, unsigned int n){
 **Good practice will be doing binary search first with iterator the with rec**
 
 ### Spectre and  meltdown and some low level shit
+Semerjiev is explaining about instruction sets and registries.  
+He showed us how the "if" operator makes "goto" in the registries memory.  
 
-Semerjiev is explaining about instruction sets and registries.
-He showed us how the "if" operator makes goto in the registries memory.
-TODO: Check how the "if" tree of the code generates registry address to the the
+`TODO`: Check how the "if" tree of the code generates registry address to the
 goto jumps when "if" is executed or just how the instruction set is generated
 with registry pointer to the memory
 
 So in modern chips not every instruction is taken from the instruction set
-which is maybe in L1 cache ?????. So to prevent this the chip loads whole blocks
-of instruction from the cache to the registries
+which is maybe in L1 cache? So to prevent this the chip loads whole blocks
+of instruction from the cache to the registries  
 
-Chips have 2 ways of optimizing which:
-RIGHT/WRONG checking - Speculation execution
-Parallelism
+Chips have 2 ways of optimizing:
+* RIGHT/WRONG checking - Speculation execution  
+* Parallelism  
 
-Mechanism of Meltdown:
-Simple way of explaining: takes uncleared cache data which is actually
-unprotected
+Mechanism of Meltdown: Takes uncleared cache data which is actually unprotected  
 
-Spectre even could inject code
+Spectre even could inject code  
 
-Speculation control Script -
+Speculation control Script
 
-# How the functions work in the stack by Semerjiev:
+## How the functions work in the stack by Semerjiev:
 
-Exactly after the stack pointer in the begging the arguments are written
-After that there is the functions and their local variables
-So when functions in order to go back to the starting pointer before the
-function call the pointer goes back with help of a base pointer or frame pointer
-which helps to navigate back before the function call.
+Exactly after the stack pointer in the begging, the arguments are written.
+After that there is the functions and its local variables.
+So in order to go back to the starting pointer after execution of the function,
+before the function call the pointer goes back with help of a base pointer or
+frame pointer which helps to navigate back before the function call.  
 
 This thing we learned in OS back in ELSYS - base pointer is the start of the
 stack in this case the function and navigates with stack pointer  
