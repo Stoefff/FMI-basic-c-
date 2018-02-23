@@ -45,22 +45,22 @@ Decompressed should be dynamic using 2 functions
 1. Should count length recursivly to the next number or at the end '\0'  
 2. One which decompresses  
 ```c++
-    getlength(char * str){
-        if(str == NULL || *str == '\0')
-            return 0;
-        else if(ifAlpha(*str))
-            return 1 + getlength(str + 1);
-        else if(isDigit(*str))
+getlength(char * str){
+    if(str == NULL || *str == '\0')
+        return 0;
+    else if(ifAlpha(*str))
+        return 1 + getlength(str + 1);
+    else if(isDigit(*str))
 
 
-    }
+}
 ```
 
 Recursion can be tree like example:  
 
 ABC10(10(10(XYZ)))FGH  
-    ------------- ---  
-The one branch^    ^The second branch  
+----------------- ---  
+The one branch^^--^^The second branch  
 
 Problem is handling how much should the size of the dynamic array?  
 We could use function which takes numbers form a string  
