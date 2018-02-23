@@ -14,9 +14,10 @@ Event when comparing with ZERO we should use the the EPSILON method
 **ANY** float var has random digits at the end  
 
 ## Memory
-### Automatic (Stack)
-Stack frame - dependent of the current scopes
+### Automatic or Stack
+Stack frame - dependent of the current scopes  
 Formal(name) and real(value) types vars
+There are stack pointers and base/frame pointers
 
 ### Static
 Not dependent on any scopes
@@ -45,7 +46,7 @@ p = &a;
 
 std::cout << &p; //Prints the address of the pointer itself
 
-int* p = NULL; // Good practice or bad practices ?
+int* p = NULL; // Good practice or bad practice ?
 ```
 Heaps
 ```c++
