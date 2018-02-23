@@ -28,7 +28,7 @@ int sum(int number, int result = 0){ // if result is not passed, default is 0 !!
 }
 ```
 
-### Tail recursion
+#### Tail recursion
 Returning from the bottom to the start
 ```c++
 int sum(int n ){
@@ -38,7 +38,7 @@ int sum(int n ){
 }
 ```
 
-### Tree like recursion
+#### Tree like recursion
 There are many branches in with the recursion is called.  
 Good examples the calculation the Fibonacci sequence.  
 It is not a good type of recursion because it runs the calculation for the same
@@ -77,7 +77,7 @@ which is maybe in L1 cache? So to prevent this the chip loads whole blocks
 of instruction from the cache to the registries  
 
 Chips have 2 ways of optimizing:
-* RIGHT/WRONG checking - Speculation execution  
+* Speculation execution - RIGHT/WRONG checking    
 * Parallelism  
 
 Mechanism of Meltdown: Takes uncleared cache data which is actually unprotected  
