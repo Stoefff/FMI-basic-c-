@@ -16,7 +16,7 @@ Event when comparing with ZERO we should use the the EPSILON method
 ## Memory
 ### Automatic or Stack
 Stack frame - dependent of the current scopes  
-Formal(name) and real(value) types vars
+Formal(name) and real(value) types vars  
 There are stack pointers and base/frame pointers
 
 ### Static
