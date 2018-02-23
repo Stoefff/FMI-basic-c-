@@ -1,8 +1,7 @@
-# References
-## Visual Studio comp vs G++
-In Visual Studio you cant init array with size entered from the user  
+## Visual Studio compiler vs G++
+In Visual Studio you cant initialize array with size entered from the user  
 In G++ you can do it but it is not good(could fuck up in various diff ways)  
-_** DON'T DO IT **_
+**DON'T DO IT**
 
 ## 2D arrays
 Watch out when passing by reference
@@ -13,8 +12,7 @@ Watch out when passing by reference
 > Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order.  
 
 ```c++
-void bubbleSort(int arr[], int n)
-{
+void bubbleSort(int arr[], int n){
    int i, j;
    for (i = 0; i < n-1; i++)      
 
@@ -29,8 +27,7 @@ void bubbleSort(int arr[], int n)
 > The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering > ascending order) from unsorted part and putting it at the beginning. The algorithm maintains two > subarrays in a given array.  
 
 ``` c++
-void selectionSort(int arr[], int n)
-{
+void selectionSort(int arr[], int n){
     int i, j, min_idx;
 
     // One by one move boundary of unsorted subarray

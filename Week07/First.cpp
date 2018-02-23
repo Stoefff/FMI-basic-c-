@@ -67,7 +67,6 @@ void task3(){
 void task4(){
     int array[MAX_OFFSET];
     int number;
-    int h
 
     std::cin >> number;
 
@@ -80,10 +79,6 @@ void task4(){
     for(int i = 0; i < number; i++){
         std::cout << array[i] << " ";
     }
-
-
-
-
 }
 
 int main(){
