@@ -40,14 +40,14 @@ that can be reached.
 **TODO: CHECK DOCUMENTATION**
 
 ### Stack canary
-Watching if such ^ strings fucks up the stack and stops it if does so
+Watching if such ^ strings fucks up the stack and stops it if does so  
 There is another way of defending the stack  
 
-### CPP lib for memory leaks detection :
+### CPP lib for memory leaks detection ???
 
 ## 2D arrays details:
 Actually using arr[][] is quite slower than using pointer arithmetics because
 is likely that the memory of 2D array in not ordered in the memory
 
-**TODO: There are some spicy notes on the topic in Vasi's repo - `CHECK` !!!**    
-**Check the fuck up recursion task in the repo**
+**TODO: There are some spicy notes on the topic in Vasi's repo - `CHECK!`**    
+**Check the fuck up recursion task in the repo **
